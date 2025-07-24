@@ -40,7 +40,7 @@ public class Test1 {
                         "Logged In Successfully"
                 ));
 
-        System.out.println("✅ Аккаунт успешно создан!");
+//        System.out.println("✅ Аккаунт успешно создан!");
     }
 }
 
