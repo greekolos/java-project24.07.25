@@ -12,7 +12,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.release>17</maven.compiler.release>
-        <test.tags></test.tags>
     </properties>
 
     <dependencies>
@@ -46,17 +45,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <useFile>false</useFile> <!-- Показывать логи тестов в консоли -->
-                    <printSummary>true</printSummary> <!-- Печатать итог по каждому тесту -->
-                    <reportFormat>brief</reportFormat> <!-- Формат вывода -->
-                    <properties>
-                        <property>
-                            <name>junit.jupiter.include.tags</name>
-                            <value>${test.tags}</value> <!-- Фильтрация по тегам -->
-                        </property>
-                    </properties>
+                    <useFile>false</useFile>
+                    <printSummary>true</printSummary>
+                    <reportFormat>brief</reportFormat>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 </project>
+
